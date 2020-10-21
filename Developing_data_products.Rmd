@@ -1,0 +1,39 @@
+---
+title: "Developing Data Products"
+author: "Adita Poddar"
+date: "21/10/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+contains a document and a map.
+
+## Required Packages
+
+```{r echo=TRUE}
+library(leaflet)
+```
+
+## Places where I've studied 
+
+Includes my home and school location.
+
+```{r}
+my_map <- leaflet() %>%
+addTiles() %>%
+addMarkers(lat=22.694762, lng=88.404880,
+popup="My House ")
+my_map
+my_map <- leaflet() %>%
+addTiles() %>%
+addMarkers(lat=22.55303, lng=88.365281,
+popup="My school")
+my_map
+```
+
+## Project Review
+
+Locations Provided: Kolkata.
